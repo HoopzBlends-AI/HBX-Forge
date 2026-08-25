@@ -1,0 +1,104 @@
+# 🇳🇬 Nigeria Country Profile
+# First country in the HBX-Forge deployment matrix.
+
+code: NG
+name: Nigeria
+official_name: Federal Republic of Nigeria
+capital: Abuja
+largest_city: Lagos
+currency: NGN
+currency_symbol: "₦"
+languages:
+  - en  # English (official)
+  - yo  # Yoruba
+  - ig  # Igbo
+  - ha  # Hausa
+timezone: Africa/Lagos
+utc_offset: "+01:00"
+calling_code: "+234"
+date_format: DD/MM/YYYY
+number_format:
+  decimal_separator: "."
+  thousands_separator: ","
+
+# Identity formats
+identity:
+  nin:
+    name: National Identification Number
+    authority: NIMC (National Identity Management Commission)
+    format: "11 digits"
+    example: "12345678901"
+  bvn:
+    name: Bank Verification Number
+    authority: NIBSS (Nigeria Inter-Bank Settlement System)
+    format: "11 digits"
+    example: "12345678901"
+  drivers_license:
+    authority: FRSC
+  international_passport:
+    authority: NIS
+
+# Tax systems
+tax:
+  tin:
+    name: Tax Identification Number
+    authority: FIRS (Federal Inland Revenue Service)
+    format: "10-12 digits with hyphens"
+    example: "12345-67890-0001"
+  vat_rate: 7.5
+  vat_authority: FIRS
+  state_tax_authority: State Internal Revenue Service
+
+# Business registration
+business:
+  registration_authority: CAC (Corporate Affairs Commission)
+  entity_types:
+    - Business Name
+    - Limited Company
+    - Public Company
+    - Non-Profit
+    - Cooperative
+
+# Land registry
+land:
+  registry_states: 36  # 36 states + FCT
+  typical_documents:
+    - Certificate of Occupancy (C of O)
+    - Deed of Assignment
+    - Power of Attorney
+    - Survey Plan
+    - Governor's Consent
+
+# Compliance
+compliance:
+  - NDPR  # Nigeria Data Protection Regulation 2019
+  - CBN Cybersecurity Framework
+  - NCC Regulations
+
+# Public data portals to integrate
+data_portals:
+  - budeshi.ng  # Open contracting
+  - opendata.gov.ng
+  - nigerianstat.gov.ng
+
+# Emergency services
+emergency:
+  police: "112"
+  fire: "112"
+  ambulance: "112"
+  national_emergency_management: NEMA
+
+# Pilot candidate: Lagos State
+pilot_state:
+  name: Lagos State
+  capital: Ikeja
+  population: "~21 million"
+  lga_count: 20
+  rationale: "Largest economy in Nigeria, tech-forward, existing e-government initiatives"
+
+# Revenue potential (rough estimates)
+revenue_estimates:
+  pilot_year_1_usd: 50000      # Free pilot
+  first_contract_usd: 250000   # 1 state contract
+  multi_state_year_2_usd: 2000000
+  national_year_3_usd: 10000000

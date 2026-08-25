@@ -1,0 +1,30 @@
+{
+  "name": "hbx-forge",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Autonomous mission engine for HBX national digital infrastructure",
+  "author": "Hoopz Blends <hoopzblends@gmail.com>",
+  "license": "AGPL-3.0",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "npm run dev --workspace=apps/dashboard",
+    "build": "npm run build --workspaces --if-present",
+    "lint": "eslint . --ext .ts,.tsx,.js,.jsx",
+    "test": "npm run test --workspaces --if-present",
+    "deploy:dashboard": "netlify deploy --prod --dir=apps/dashboard/.next",
+    "forge:status": "node scripts/status.js",
+    "forge:plan": "node scripts/plan.js",
+    "forge:add-task": "node scripts/add-task.js"
+  },
+  "devDependencies": {
+    "typescript": "^5.3.0",
+    "@types/node": "^20.0.0",
+    "eslint": "^8.50.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
