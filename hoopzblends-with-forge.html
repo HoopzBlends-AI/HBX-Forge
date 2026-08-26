@@ -1,0 +1,1323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<meta name="description" content="Hoopz Blends — Lagos-born creative & tech universe. 3D logos, VFX, websites, AI OS systems and brand identities built for the future."/>
+<meta name="wa-number" content="2347034722704"/>
+<meta name="tg-username" content="hoopzblends"/>
+<meta property="og:title" content="Hoopz Blends — Creative & Tech Universe"/>
+<meta property="og:description" content="Future-grade 3D, VFX, websites and AI systems. Built from Lagos. Designed for the world."/>
+<meta property="og:url" content="https://hoopzblends.store/"/>
+<meta name="theme-color" content="#020214"/>
+<title>Hoopz Blends — Creative & Tech Universe</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700;900&family=Rajdhani:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css"/>
+<link rel="stylesheet" href="/assets/css/main.css"/>
+<style>
+/* === HBX-FORGE TEASER STYLES (injected) === */
+/* ============================================
+   HBX-FORGE TEASER SECTION
+   Drop into hoopzblends.store main.css
+   ============================================ */
+
+.forge-section {
+  position: relative;
+  padding: 100px 24px;
+  background: linear-gradient(180deg, #050525 0%, #020214 50%, #050525 100%);
+  overflow: hidden;
+  font-family: 'Rajdhani', sans-serif;
+}
+
+.forge-bg-grid {
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(0, 240, 255, 0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0, 240, 255, 0.05) 1px, transparent 1px);
+  background-size: 40px 40px;
+  mask-image: radial-gradient(ellipse at center, black 30%, transparent 80%);
+  -webkit-mask-image: radial-gradient(ellipse at center, black 30%, transparent 80%);
+}
+
+.forge-scan-line {
+  position: absolute;
+  left: 0; right: 0;
+  height: 100px;
+  background: linear-gradient(180deg, transparent, rgba(0,240,255,0.08), transparent);
+  animation: forge-scan 6s linear infinite;
+  pointer-events: none;
+}
+
+@keyframes forge-scan {
+  0% { top: -100px; }
+  100% { top: 100%; }
+}
+
+.forge-container {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+  z-index: 2;
+}
+
+.forge-header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.forge-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 16px;
+  border: 1px solid rgba(0, 240, 255, 0.3);
+  border-radius: 100px;
+  background: rgba(0, 240, 255, 0.05);
+  margin-bottom: 24px;
+}
+
+.forge-badge-text {
+  font-family: 'Space Mono', monospace;
+  font-size: 11px;
+  letter-spacing: 2px;
+  color: #00f0ff;
+}
+
+.pulse-dot {
+  width: 8px; height: 8px;
+  border-radius: 50%;
+  background: #00f0ff;
+  box-shadow: 0 0 10px #00f0ff;
+  animation: forge-pulse 2s ease-in-out infinite;
+}
+
+@keyframes forge-pulse {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.4; transform: scale(1.3); }
+}
+
+.forge-title {
+  font-family: 'Orbitron', sans-serif;
+  font-size: clamp(40px, 8vw, 88px);
+  font-weight: 900;
+  margin: 0 0 24px;
+  letter-spacing: 4px;
+}
+
+.forge-title-glow {
+  background: linear-gradient(135deg, #00f0ff 0%, #ff00aa 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  filter: drop-shadow(0 0 20px rgba(0, 240, 255, 0.5));
+}
+
+.forge-tagline {
+  font-size: clamp(16px, 2vw, 22px);
+  color: #e8e8ff;
+  max-width: 720px;
+  margin: 0 auto 12px;
+  line-height: 1.5;
+}
+
+.forge-tagline strong { color: #00f0ff; }
+
+.forge-subline {
+  font-size: 14px;
+  color: #8888aa;
+  margin: 0;
+}
+
+.forge-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 16px;
+  margin-bottom: 60px;
+}
+
+.forge-stat {
+  text-align: center;
+  padding: 24px 16px;
+  background: rgba(10, 10, 42, 0.6);
+  border: 1px solid rgba(0, 240, 255, 0.2);
+  border-radius: 8px;
+  backdrop-filter: blur(10px);
+}
+
+.forge-stat-num {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 36px;
+  font-weight: 900;
+  color: #00f0ff;
+  text-shadow: 0 0 20px rgba(0, 240, 255, 0.6);
+  line-height: 1;
+}
+
+.forge-stat-label {
+  font-family: 'Space Mono', monospace;
+  font-size: 11px;
+  letter-spacing: 2px;
+  color: #8888aa;
+  margin-top: 8px;
+}
+
+.forge-systems-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 12px;
+  margin-bottom: 60px;
+}
+
+.forge-system {
+  padding: 16px;
+  background: rgba(10, 10, 42, 0.5);
+  border: 1px solid rgba(0, 240, 255, 0.15);
+  border-radius: 6px;
+  transition: all 0.3s ease;
+  cursor: default;
+}
+
+.forge-system:hover {
+  border-color: rgba(0, 240, 255, 0.6);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 20px rgba(0, 240, 255, 0.2);
+}
+
+.forge-system-phase {
+  font-family: 'Space Mono', monospace;
+  font-size: 10px;
+  letter-spacing: 2px;
+  color: #8888aa;
+  margin-bottom: 8px;
+}
+
+.forge-system-name {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  color: #e8e8ff;
+  margin-bottom: 8px;
+}
+
+.forge-system-status {
+  display: inline-block;
+  padding: 3px 8px;
+  border-radius: 4px;
+  font-family: 'Space Mono', monospace;
+  font-size: 10px;
+  letter-spacing: 1px;
+}
+
+.status-building { background: #00f0ff; color: #000; }
+.status-planned { background: rgba(0, 240, 255, 0.2); color: #00f0ff; }
+.status-queued { background: rgba(255, 170, 0, 0.2); color: #ffaa00; }
+.status-future { background: rgba(136, 136, 170, 0.2); color: #8888aa; }
+
+.forge-cta-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: center;
+  align-items: center;
+}
+
+.forge-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  padding: 16px 32px;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+}
+
+.forge-cta-primary {
+  background: linear-gradient(135deg, #00f0ff, #ff00aa);
+  color: #000;
+  box-shadow: 0 0 30px rgba(0, 240, 255, 0.5);
+}
+
+.forge-cta-primary:hover {
+  box-shadow: 0 0 50px rgba(0, 240, 255, 0.8);
+  transform: translateY(-2px);
+}
+
+.forge-cta-ghost {
+  background: transparent;
+  color: #00f0ff;
+  border: 1px solid rgba(0, 240, 255, 0.5);
+}
+
+.forge-cta-ghost:hover {
+  background: rgba(0, 240, 255, 0.1);
+  border-color: #00f0ff;
+}
+
+.forge-cta-arrow {
+  transition: transform 0.3s;
+}
+
+.forge-cta:hover .forge-cta-arrow {
+  transform: translateX(4px);
+}
+
+@media (max-width: 640px) {
+  .forge-section { padding: 60px 16px; }
+  .forge-stats { grid-template-columns: repeat(2, 1fr); }
+}
+
+</style>
+</head>
+<body>
+
+<!-- ══════════════════════════════════════
+     BOOT SCREEN — "Studio Core Booting..."
+══════════════════════════════════════ -->
+<div id="bootScreen" aria-hidden="true">
+  <div class="boot-inner">
+    <div class="boot-logo">
+      <img src="/assets/images/hoopz-logo-main.png" alt="" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/>
+      <div class="boot-logo-fb" style="display:none">HB</div>
+    </div>
+    <div class="boot-text">STUDIO CORE BOOTING<span class="boot-dots"><span>.</span><span>.</span><span>.</span></span></div>
+    <div class="boot-bar"><div class="boot-bar-fill" id="bootBarFill"></div></div>
+  </div>
+</div>
+
+<!-- SPACE ATMOSPHERE -->
+<div class="space-layer space-layer-back" aria-hidden="true"></div>
+<div class="space-layer space-layer-front" aria-hidden="true"></div>
+<div class="star-field" aria-hidden="true"></div>
+<div class="nebula-cloud" style="width:500px;height:500px;top:-100px;left:-150px;background:rgba(72,229,255,.07);--nx:25px;--ny:-15px;--ns:1.08;animation-duration:20s" aria-hidden="true"></div>
+<div class="nebula-cloud" style="width:600px;height:400px;top:30%;right:-200px;background:rgba(168,85,255,.09);--nx:-20px;--ny:18px;--ns:1.06;animation-duration:26s" aria-hidden="true"></div>
+<div class="nebula-cloud" style="width:400px;height:400px;bottom:10%;left:20%;background:rgba(56,189,248,.06);--nx:15px;--ny:-20px;--ns:1.05;animation-duration:18s" aria-hidden="true"></div>
+<canvas id="particleCanvas" aria-hidden="true" style="position:fixed;inset:0;z-index:-1;pointer-events:none"></canvas>
+<div id="shootingStars" aria-hidden="true" style="position:fixed;inset:0;z-index:-1;pointer-events:none;overflow:hidden"></div>
+
+<!-- CURSOR -->
+<div id="cursor" aria-hidden="true"></div>
+<div id="cursor-ring" aria-hidden="true"></div>
+
+<!-- MOBILE NAV -->
+<div id="mobNav" role="dialog" aria-label="Mobile navigation">
+  <button id="mobClose" onclick="document.getElementById('mobNav').classList.remove('open')" aria-label="Close menu"><i class="ti ti-x"></i></button>
+  <a href="#hero" onclick="document.getElementById('mobNav').classList.remove('open')">Home</a>
+  <a href="#universe" onclick="document.getElementById('mobNav').classList.remove('open')">Universe</a>
+  <a href="#services" onclick="document.getElementById('mobNav').classList.remove('open')">Services</a>
+  <a href="#forge" onclick="document.getElementById('mobNav').classList.remove('open')">⚡ Forge</a>
+  <a href="#os-section" onclick="document.getElementById('mobNav').classList.remove('open')">HBX OS</a>
+  <a href="#social-feeds" onclick="document.getElementById('mobNav').classList.remove('open')">Signals</a>
+  <a href="#template-factory" onclick="document.getElementById('mobNav').classList.remove('open')">Brief</a>
+  <a href="#contact" onclick="document.getElementById('mobNav').classList.remove('open')">Contact</a>
+</div>
+
+<!-- NAV -->
+<nav id="mainNav">
+  <a class="nav-logo" href="#hero" aria-label="Hoopz Blends home">
+    <img src="/assets/images/hoopz-logo-main.png" alt="Hoopz Blends" class="nav-logo-img" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/>
+    <div class="nav-logo-fb" style="display:none">HB</div>
+    <div>
+      <div class="nav-brand-name">Hoopz Blends</div>
+      <div class="nav-brand-tag">Creative & Tech Universe · Lagos</div>
+    </div>
+  </a>
+  <div class="nav-links">
+    <a href="#hero">Home</a>
+    <a href="#universe">Universe</a>
+    <a href="#services">Services</a>
+    <a href="#portfolio">Portfolio</a>
+    <a href="#forge" class="nav-link-forge">Forge</a>
+    <a href="#os-section">HBX OS</a>
+    <a href="#social-feeds">Signals</a>
+    <a href="#template-factory">Brief</a>
+    <a href="#faq">FAQ</a>
+    <a href="#contact">Contact</a>
+    <a href="#os-section" class="nav-cta">HBX OS</a>
+  </div>
+  <div class="nav-os-pill" onclick="document.getElementById('os-section').scrollIntoView({behavior:'smooth'})">
+    <div class="os-dot"></div>Cipher Sage OS: ONLINE
+  </div>
+  <button id="themeToggle" class="nav-icon-btn" onclick="toggleTheme()" aria-label="Toggle theme" title="Toggle light/dark"><i class="ti ti-moon"></i></button>
+  <button id="soundToggle" class="nav-icon-btn" onclick="toggleSound()" aria-label="Toggle sound" title="Toggle UI sound"><i class="ti ti-volume"></i></button>
+  <button id="mobBtn" onclick="document.getElementById('mobNav').classList.add('open')" aria-label="Open menu"><i class="ti ti-menu-2"></i></button>
+</nav>
+
+<!-- HERO -->
+<section id="hero">
+  <div style="position:relative;z-index:3;max-width:700px">
+    <div class="hero-badge fade-up"><div class="os-dot"></div> 3D · VFX · WEB · OS · BRAND · LAGOS</div>
+    <h1 class="hero-title fade-up">
+      <div class="ht1">BRINGING</div>
+      <div class="ht2">IMAGINATIONS</div>
+      <div class="ht3">TO REALITY.</div>
+    </h1>
+    <p class="hero-desc fade-up">We design brands, websites, and digital systems powered by AI. <strong>Built from Lagos.</strong> Designed for the world. From 3D logos and VFX to launch-ready sites and the HBX Ecosystem OS.</p>
+    <div class="hero-btns fade-up">
+      <a href="#template-factory" class="btn-p"><i class="ti ti-rocket"></i> Start a Project</a>
+      <a href="#os-section" class="btn-s"><i class="ti ti-cpu"></i> Enter HBX OS</a>
+    </div>
+    <div class="hero-trust fade-up">
+      <span><i class="ti ti-check"></i> Clear brief intake</span>
+      <span><i class="ti ti-check"></i> Mobile-first delivery</span>
+      <span><i class="ti ti-check"></i> Source files agreed upfront</span>
+    </div>
+  </div>
+  <div class="hero-orbit" aria-hidden="true">
+    <div class="o-ring" style="width:400px;height:400px;border-color:rgba(72,229,255,.07);animation-duration:34s"></div>
+    <div class="o-ring" style="width:280px;height:280px;border-color:rgba(168,85,255,.09);animation-duration:22s;animation-direction:reverse"></div>
+    <div class="o-ring" style="width:160px;height:160px;border-color:rgba(245,158,11,.07);animation-duration:15s"></div>
+    <div class="o-center">
+      <img src="/assets/images/hoopz-logo-main.png" alt="Hoopz Blends" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/>
+      <div class="o-center-fb" style="display:none">HB</div>
+    </div>
+  </div>
+</section>
+
+<hr class="divider"/>
+
+<!-- UNIVERSE -->
+<section id="universe">
+  <div class="tag"><i class="ti ti-universe"></i> Internal Labs & Worlds</div>
+  <h2 class="sec-title">HOOPZ BLENDS<br/>UNIVERSE</h2>
+  <p class="sec-sub">Six living labs — Zero AI, Cipher Sage OS, Griot AI, NYRA AI, HB Technologies and the HBX Ecosystem. Client brands and collaborations listed separately.</p>
+  <div class="uni-grid">
+    <div class="uni-card fade-up" onclick="document.getElementById('os-section').scrollIntoView({behavior:'smooth'})">
+      <div style="position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,transparent,#38bdf8,transparent)"></div>
+      <div class="uc-top">
+        <img src="/assets/images/cipher-sage-logo.png" alt="Cipher Sage OS" class="uc-logo" onerror="this.outerHTML='<div class=\'uc-logo-fb\' style=\'background:rgba(56,189,248,.1);color:#38bdf8\'>CS</div>'"/>
+        <span class="uc-badge" style="background:rgba(16,185,129,.1);color:#10b981">● ONLINE</span>
+      </div>
+      <div class="uc-name" style="color:#38bdf8">CIPHER SAGE OS</div>
+      <div class="uc-type">OS · Intelligence Layer</div>
+      <p class="uc-desc">Live AI operating system — 21 agents, voice interaction, camera vision, built-in browser, social connect, offline mode and SOVEREIGN self-update.</p>
+      <a href="#os-section" class="uc-link" style="color:#38bdf8"><i class="ti ti-arrow-right"></i> Enter OS</a>
+    </div>
+    <div class="uni-card fade-up">
+      <div style="position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,transparent,#a78bfa,transparent)"></div>
+      <div class="uc-top">
+        <img src="/assets/images/zero-ai-logo.png" alt="Zero AI" class="uc-logo" onerror="this.outerHTML='<div class=\'uc-logo-fb\' style=\'background:rgba(167,139,250,.1);color:#a78bfa\'>Z</div>'"/>
+        <span class="uc-badge" style="background:rgba(167,139,250,.1);color:#a78bfa">◎ DEV</span>
+      </div>
+      <div class="uc-name" style="color:#a78bfa">ZERO AI</div>
+      <div class="uc-type">Core Lab · Autonomous Intelligence</div>
+      <p class="uc-desc">Intelligence without limits. Innovation without boundaries. Experimental AI focused on automation and hands-off living.</p>
+      <span class="uc-link" style="color:#a78bfa;opacity:.5;cursor:default"><i class="ti ti-lock"></i> Lab Access (private)</span>
+    </div>
+    <div class="uni-card fade-up">
+      <div style="position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,transparent,#f97316,transparent)"></div>
+      <div class="uc-top">
+        <img src="/assets/images/griot-ai-logo.png" alt="Griot AI" class="uc-logo" onerror="this.outerHTML='<div class=\'uc-logo-fb\' style=\'background:rgba(249,115,22,.1);color:#f97316\'>GR</div>'"/>
+        <span class="uc-badge" style="background:rgba(249,115,22,.1);color:#f97316">◎ BUILDING</span>
+      </div>
+      <div class="uc-name" style="color:#f97316">GRIOT AI</div>
+      <div class="uc-type">Cultural Intelligence · Knowledge</div>
+      <p class="uc-desc">Knowledge. Wisdom. Legacy. Intelligence that remembers. Ubuntu · Sankofa · Ma'at built into a living AI layer.</p>
+      <span class="uc-link" style="color:#f97316;opacity:.5;cursor:default"><i class="ti ti-clock"></i> Coming soon</span>
+    </div>
+    <div class="uni-card fade-up">
+      <div style="position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,transparent,#a855f7,transparent)"></div>
+      <div class="uc-top">
+        <img src="/assets/images/nyra-ai-logo.png" alt="NYRA AI" class="uc-logo" onerror="this.outerHTML='<div class=\'uc-logo-fb\' style=\'background:rgba(168,85,247,.1);color:#a855f7\'>NY</div>'"/>
+        <span class="uc-badge" style="background:rgba(168,85,247,.1);color:#a855f7">◎ BUILDING</span>
+      </div>
+      <div class="uc-name" style="color:#a855f7">NYRA AI</div>
+      <div class="uc-type">Human-Centered Intelligence</div>
+      <p class="uc-desc">Intelligent. Adaptive. Limitless. Human-centered AI, adaptive learning and ethical reasoning systems.</p>
+      <span class="uc-link" style="color:#a855f7;opacity:.5;cursor:default"><i class="ti ti-clock"></i> Preview locked</span>
+    </div>
+    <div class="uni-card fade-up">
+      <div style="position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,transparent,#818cf8,transparent)"></div>
+      <div class="uc-top">
+        <img src="/assets/images/hbt-logo.png" alt="HB Technologies" class="uc-logo" onerror="this.outerHTML='<div class=\'uc-logo-fb\' style=\'background:rgba(129,140,248,.1);color:#818cf8\'>HBT</div>'"/>
+        <span class="uc-badge" style="background:rgba(129,140,248,.1);color:#818cf8">◎ BUILDING</span>
+      </div>
+      <div class="uc-name" style="color:#818cf8">HB TECHNOLOGIES</div>
+      <div class="uc-type">Tech Infrastructure · AI Systems</div>
+      <p class="uc-desc">Innovate. Integrate. Elevate. AI systems, software solutions, cloud infrastructure and global connectivity.</p>
+      <span class="uc-link" style="color:#818cf8;opacity:.5;cursor:default"><i class="ti ti-clock"></i> Coming soon</span>
+    </div>
+    <div class="uni-card fade-up">
+      <div style="position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,transparent,#f59e0b,transparent)"></div>
+      <div class="uc-top">
+        <img src="/assets/images/hbx-logo.png" alt="HBX Ecosystem" class="uc-logo" onerror="this.outerHTML='<div class=\'uc-logo-fb\' style=\'background:rgba(245,158,11,.1);color:#f59e0b\'>HBX</div>'"/>
+        <span class="uc-badge" style="background:rgba(245,158,11,.1);color:#f59e0b">◎ ECOSYSTEM</span>
+      </div>
+      <div class="uc-name" style="color:#f59e0b">HBX ECOSYSTEM</div>
+      <div class="uc-type">One Ecosystem · Infinite Possibilities</div>
+      <p class="uc-desc">Create. Connect. Evolve. The unified HBX hub — all portals under one roof. Built in Africa. Designed for the world.</p>
+      <span class="uc-link" style="color:#f59e0b;opacity:.5;cursor:default"><i class="ti ti-clock"></i> Portal launching soon</span>
+    </div>
+  </div>
+</section>
+
+<hr class="divider"/>
+
+<!-- SERVICES -->
+<section id="services">
+  <div class="tag"><i class="ti ti-briefcase"></i> Services & Brand Packs</div>
+  <h2 class="sec-title">WHAT WE<br/>BUILD</h2>
+  <p class="sec-sub">Come with a sketch, voice note, messy idea or full-blown dream. We turn it into visuals, systems and stories built for launch.</p>
+  <div class="svc-grid">
+    <div class="svc-card fade-up">
+      <div class="svc-num">01</div>
+      <div class="svc-name">LOGO / 3D IDENTITY</div>
+      <div class="svc-type">For artists, DJs, brands & projects</div>
+      <p class="svc-desc">A symbol people never forget — rendered in 3D with a full identity kit ready for every platform.</p>
+      <ul class="svc-list"><li>2–3 logo concepts</li><li>Final 3D / 200D render</li><li>Profile picture & banner kit</li><li>WhatsApp / IG / X ready</li></ul>
+      <div class="svc-price">from ₦80,000</div>
+      <button class="svc-btn" onclick="selBrief('Logo / 3D Identity')"><i class="ti ti-arrow-right"></i> Start Logo Brief</button>
+    </div>
+    <div class="svc-card fade-up">
+      <div class="svc-num">02</div>
+      <div class="svc-name">WEBSITE / LANDING PAGE</div>
+      <div class="svc-type">For businesses & creators</div>
+      <p class="svc-desc">Futuristic, mobile-first, built to convert and impress. Beyond any basic template.</p>
+      <ul class="svc-list"><li>1–5 page futuristic site</li><li>Responsive, mobile-first</li><li>OS-style hero sections</li><li>Contact & order flows</li></ul>
+      <div class="svc-price">from ₦180,000</div>
+      <button class="svc-btn" onclick="selBrief('Website / Landing')"><i class="ti ti-arrow-right"></i> Start Web Brief</button>
+    </div>
+    <div class="svc-card fade-up">
+      <div class="svc-num">03</div>
+      <div class="svc-name">VFX / REEL PACK</div>
+      <div class="svc-type">For music, promos & content</div>
+      <p class="svc-desc">Motion that looks like it came from 80 years ahead — glitch, hologram, volumetric light.</p>
+      <ul class="svc-list"><li>Reel / intro concepts</li><li>Motion graphics & overlays</li><li>Glitch, hologram & FX</li><li>Optimized for TikTok / IG / YouTube</li></ul>
+      <div class="svc-price">from ₦120,000</div>
+      <button class="svc-btn" onclick="selBrief('VFX / Reel Pack')"><i class="ti ti-arrow-right"></i> Start VFX Brief</button>
+    </div>
+    <div class="svc-card gold-top gold-border fade-up">
+      <div class="svc-num" style="color:rgba(245,158,11,.15)">04</div>
+      <div class="svc-name" style="color:var(--gold)">BRAND UNIVERSE</div>
+      <div class="svc-type" style="color:var(--gold)">For people building something BIG</div>
+      <p class="svc-desc">Brand, content, OS and story — all connected. Your complete digital civilization.</p>
+      <ul class="svc-list"><li>Logo + 3D universe visuals</li><li>Website or OS dashboard</li><li>Content & reel plan</li><li>Lagos Universe lore for your brand</li></ul>
+      <div class="svc-price" style="color:var(--gold)">from ₦400,000</div>
+      <button class="svc-btn" style="border-color:rgba(245,158,11,.3);color:var(--gold);background:rgba(245,158,11,.06)" onclick="selBrief('Brand Universe')"><i class="ti ti-arrow-right"></i> Start Universe Brief</button>
+    </div>
+  </div>
+</section>
+
+<hr class="divider"/>
+
+<!-- HBX OS SECTION -->
+<section id="os-section">
+  <div class="tag"><i class="ti ti-cpu"></i> HBX Ecosystem OS — v6.0 Ultra</div>
+  <h2 class="sec-title">YOUR OS IS<br/><span style="color:var(--accent)">ALIVE.</span></h2>
+  <p class="sec-sub">21 AI agents, 5 portals, voice interaction, camera & vision, built-in browser, social connect, offline mode, OS search and SOVEREIGN self-update. All free. All yours.</p>
+  <div class="os-shell fade-up">
+    <div class="os-topbar" style="position:relative">
+      <div class="os-icon">
+        <img src="/assets/images/cipher-sage-logo.png" alt="HBX" onerror="this.style.display='none';this.parentElement.textContent='HBX'"/>
+      </div>
+      <div>
+        <div class="os-tb-name">HBX ECOSYSTEM OS — v6.0 ULTRA</div>
+        <div class="os-tb-sub">Built in Africa · 21 agents · Voice · Camera · Browser · Social · Offline</div>
+      </div>
+      <div class="os-tb-right">
+        <div class="os-pill">Groq · Free</div>
+        <div style="display:flex;align-items:center;gap:4px;font-size:8px;color:var(--jade);font-family:var(--font-code)"><div class="os-dot"></div>Online</div>
+      </div>
+      <div style="position:absolute;bottom:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent,var(--accent),var(--accent2),var(--ember),transparent);opacity:.4"></div>
+    </div>
+    <div class="os-body">
+      <div class="os-sb">
+        <div class="os-sb-sec">Core</div>
+        <div class="os-sb-item act"><div class="os-sb-dot" style="background:var(--accent2)"></div>HBX Command</div>
+        <div class="os-sb-item"><div class="os-sb-dot" style="background:#38bdf8"></div>Overmind</div>
+        <div class="os-sb-item"><div class="os-sb-dot" style="background:var(--jade)"></div>NATALIE</div>
+        <div class="os-sb-item"><div class="os-sb-dot" style="background:var(--rose)"></div>Social Connect</div>
+        <div class="os-sb-item"><div class="os-sb-dot" style="background:#38bdf8"></div>HBX Browser</div>
+        <div class="os-sb-item"><div class="os-sb-dot" style="background:var(--jade)"></div>Camera & Vision</div>
+        <div class="os-sb-sec">Portals</div>
+        <div class="os-sb-item"><div class="os-sb-dot" style="background:#6366f1"></div>Cipher Sage</div>
+        <div class="os-sb-item"><div class="os-sb-dot" style="background:#f97316"></div>Griot AI</div>
+        <div class="os-sb-item"><div class="os-sb-dot" style="background:#a855f7"></div>NYRA AI</div>
+        <div class="os-sb-item"><div class="os-sb-dot" style="background:#06b6d4"></div>Zero AI</div>
+        <div class="os-sb-sec">System</div>
+        <div class="os-sb-item"><div class="os-sb-dot" style="background:var(--gold)"></div>SOVEREIGN</div>
+      </div>
+      <div class="os-main">
+        <div class="os-title">HBX ECOSYSTEM — ONLINE</div>
+        <div class="os-subtitle">21 agents · Voice · Camera · Browser · Social · Offline · Search</div>
+        <div class="os-cards">
+          <div class="os-card" onclick="document.getElementById('osInfoModal').classList.add('open')">
+            <img src="/assets/images/cipher-sage-logo.png" alt="Cipher Sage" onerror="this.outerHTML='<div style=\'font-size:20px;margin-bottom:5px\'>🛡️</div>'"/>
+            <div class="os-card-name" style="color:#38bdf8">CIPHER SAGE</div>
+            <div class="os-card-desc">Mission & Intel</div>
+          </div>
+          <div class="os-card" onclick="document.getElementById('osInfoModal').classList.add('open')">
+            <img src="/assets/images/griot-ai-logo.png" alt="Griot AI" onerror="this.outerHTML='<div style=\'font-size:20px;margin-bottom:5px\'>🔥</div>'"/>
+            <div class="os-card-name" style="color:#f97316">GRIOT AI</div>
+            <div class="os-card-desc">Wisdom & Legacy</div>
+          </div>
+          <div class="os-card" onclick="document.getElementById('osInfoModal').classList.add('open')">
+            <img src="/assets/images/nyra-ai-logo.png" alt="NYRA AI" onerror="this.outerHTML='<div style=\'font-size:20px;margin-bottom:5px\'>✨</div>'"/>
+            <div class="os-card-name" style="color:#a855f7">NYRA AI</div>
+            <div class="os-card-desc">Human Intel</div>
+          </div>
+          <div class="os-card" onclick="document.getElementById('osInfoModal').classList.add('open')">
+            <img src="/assets/images/zero-ai-logo.png" alt="Zero AI" onerror="this.outerHTML='<div style=\'font-size:20px;margin-bottom:5px\'>⚡</div>'"/>
+            <div class="os-card-name" style="color:#06b6d4">ZERO AI</div>
+            <div class="os-card-desc">Autonomous</div>
+          </div>
+          <div class="os-card" onclick="document.getElementById('osInfoModal').classList.add('open')">
+            <img src="/assets/images/hbt-logo.png" alt="HB Technologies" onerror="this.outerHTML='<div style=\'font-size:20px;margin-bottom:5px\'>💻</div>'"/>
+            <div class="os-card-name" style="color:#818cf8">HB TECH</div>
+            <div class="os-card-desc">Infrastructure</div>
+          </div>
+          <div class="os-card" onclick="document.getElementById('osInfoModal').classList.add('open')">
+            <img src="/assets/images/hbx-logo.png" alt="HBX Ecosystem" onerror="this.outerHTML='<div style=\'font-size:20px;margin-bottom:5px\'>🌐</div>'"/>
+            <div class="os-card-name" style="color:var(--gold)">HBX</div>
+            <div class="os-card-desc">Ecosystem</div>
+          </div>
+        </div>
+        <div class="os-cta">
+          <a href="http://localhost:3000" target="_blank" rel="noopener" class="btn-p" style="font-size:12px;padding:10px 18px"><i class="ti ti-external-link"></i> Enter Full OS</a>
+          <button class="btn-s" onclick="document.getElementById('osInfoModal').classList.add('open')" style="font-size:12px;padding:9px 14px"><i class="ti ti-info-circle"></i> Run Locally</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="feature-strip">
+    <div class="feat-item"><i class="ti ti-microphone" style="color:var(--accent)"></i><div class="feat-label">VOICE</div><div class="feat-desc">Speak to agents</div></div>
+    <div class="feat-item"><i class="ti ti-camera" style="color:var(--jade)"></i><div class="feat-label">VISION</div><div class="feat-desc">See & scan</div></div>
+    <div class="feat-item"><i class="ti ti-world-www" style="color:#38bdf8"></i><div class="feat-label">BROWSER</div><div class="feat-desc">Built-in web</div></div>
+    <div class="feat-item"><i class="ti ti-network" style="color:var(--rose)"></i><div class="feat-label">SOCIAL</div><div class="feat-desc">10 platforms</div></div>
+    <div class="feat-item"><i class="ti ti-wifi-off" style="color:var(--gold)"></i><div class="feat-label">OFFLINE</div><div class="feat-desc">No internet needed</div></div>
+    <div class="feat-item"><i class="ti ti-refresh-alert" style="color:var(--gold)"></i><div class="feat-label">SOVEREIGN</div><div class="feat-desc">Self-updates with AI</div></div>
+  </div>
+</section>
+
+<!-- ============================================ -->
+<!-- HBX-FORGE TEASER SECTION                      -->
+<!-- Add to hoopzblends.store main page            -->
+<!-- Place AFTER </section> for #os-section        -->
+<!-- ============================================ -->
+
+<section id="forge" class="forge-section">
+  <div class="forge-bg-grid"></div>
+  <div class="forge-scan-line"></div>
+
+  <div class="forge-container">
+    <div class="forge-header">
+      <div class="forge-badge">
+        <span class="pulse-dot"></span>
+        <span class="forge-badge-text">SYSTEM ONLINE · v0.1</span>
+      </div>
+      <h2 class="forge-title">
+        <span class="forge-title-glow">HBX // FORGE</span>
+      </h2>
+      <p class="forge-tagline">
+        The autonomous mission engine building <strong>HBX</strong> — open-source national digital infrastructure for every country on Earth.
+      </p>
+      <p class="forge-subline">
+        Identity. Tax. Health. Land. Education. Emergency. Customizable per nation. Hack-proof by design.
+      </p>
+    </div>
+
+    <div class="forge-stats">
+      <div class="forge-stat">
+        <div class="forge-stat-num" data-target="13">0</div>
+        <div class="forge-stat-label">CORE SYSTEMS</div>
+      </div>
+      <div class="forge-stat">
+        <div class="forge-stat-num" data-target="1">0</div>
+        <div class="forge-stat-label">COUNTRY PILOT</div>
+      </div>
+      <div class="forge-stat">
+        <div class="forge-stat-num" data-target="0">0</div>
+        <div class="forge-stat-label">SECURITY INCIDENTS</div>
+      </div>
+      <div class="forge-stat">
+        <div class="forge-stat-num">∞</div>
+        <div class="forge-stat-label">COUNTRIES PLANNED</div>
+      </div>
+    </div>
+
+    <div class="forge-systems-grid">
+      <div class="forge-system phase-a">
+        <div class="forge-system-phase">PHASE A · FOUNDATION</div>
+        <div class="forge-system-name">HBX-Identity</div>
+        <div class="forge-system-status status-building">BUILDING</div>
+      </div>
+      <div class="forge-system phase-a">
+        <div class="forge-system-phase">PHASE A · FOUNDATION</div>
+        <div class="forge-system-name">HBX-Portal</div>
+        <div class="forge-system-status status-planned">PLANNED</div>
+      </div>
+      <div class="forge-system phase-a">
+        <div class="forge-system-phase">PHASE A · FOUNDATION</div>
+        <div class="forge-system-name">HBX-Audit</div>
+        <div class="forge-system-status status-planned">PLANNED</div>
+      </div>
+      <div class="forge-system phase-a">
+        <div class="forge-system-phase">PHASE A · FOUNDATION</div>
+        <div class="forge-system-name">HBX-Crypto</div>
+        <div class="forge-system-status status-planned">PLANNED</div>
+      </div>
+      <div class="forge-system phase-b">
+        <div class="forge-system-phase">PHASE B · SERVICES</div>
+        <div class="forge-system-name">HBX-BizReg</div>
+        <div class="forge-system-status status-queued">QUEUED</div>
+      </div>
+      <div class="forge-system phase-b">
+        <div class="forge-system-phase">PHASE B · SERVICES</div>
+        <div class="forge-system-name">HBX-Tax</div>
+        <div class="forge-system-status status-queued">QUEUED</div>
+      </div>
+      <div class="forge-system phase-b">
+        <div class="forge-system-phase">PHASE B · SERVICES</div>
+        <div class="forge-system-name">HBX-Land</div>
+        <div class="forge-system-status status-queued">QUEUED</div>
+      </div>
+      <div class="forge-system phase-c">
+        <div class="forge-system-phase">PHASE C · PUBLIC GOODS</div>
+        <div class="forge-system-name">HBX-Health</div>
+        <div class="forge-system-status status-future">FUTURE</div>
+      </div>
+    </div>
+
+    <div class="forge-cta-row">
+      <a href="/forge" class="forge-cta forge-cta-primary">
+        <span>ENTER THE FORGE</span>
+        <span class="forge-cta-arrow">→</span>
+      </a>
+      <a href="https://github.com/HoopzBlends-AI/HBX-Forge" target="_blank" rel="noopener" class="forge-cta forge-cta-ghost">
+        <span>VIEW ON GITHUB</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+
+<!-- OS INFO MODAL -->
+<div id="osInfoModal" role="dialog" aria-label="HBX OS setup guide">
+  <div class="os-info-box">
+    <button class="os-info-close" onclick="document.getElementById('osInfoModal').classList.remove('open')" aria-label="Close"><i class="ti ti-x"></i></button>
+    <div style="font-family:var(--font-hero);font-size:22px;letter-spacing:.04em;margin-bottom:6px;color:var(--accent)">RUN HBX OS LOCALLY</div>
+    <p style="font-size:13px;color:var(--muted);line-height:1.7;margin-bottom:12px">Runs free on your PC. No monthly fees. Uses Groq AI (free tier).</p>
+    <div class="code-block">1. Get free Groq key → console.groq.com<br/>2. Install Node.js → nodejs.org<br/>3. Email for OS package → hoopzblends@gmail.com<br/>4. Add key to .env file<br/>5. npm install → node server.js<br/>6. Open → http://localhost:3000</div>
+    <div style="display:flex;gap:10px;margin-top:16px;flex-wrap:wrap">
+      <a href="mailto:hoopzblends@gmail.com" class="btn-p" style="font-size:12px;padding:10px 16px"><i class="ti ti-mail"></i> Get OS Package</a>
+      <a href="https://console.groq.com" target="_blank" rel="noopener" class="btn-s" style="font-size:12px;padding:9px 14px"><i class="ti ti-external-link"></i> Free Groq Key</a>
+    </div>
+  </div>
+</div>
+
+<hr class="divider"/>
+
+<!-- PROCESS -->
+<section id="process">
+  <div class="tag"><i class="ti ti-route"></i> Build Protocol</div>
+  <h2 class="sec-title">FROM IDEA<br/>TO LAUNCH</h2>
+  <p class="sec-sub">Designed to reduce confusion, protect the vision, and move serious projects from first message to finished asset with clarity.</p>
+  <div class="proc-grid">
+    <div class="proc-card fade-up"><div class="proc-num">01</div><div class="proc-name">BRIEF INTAKE</div><p class="proc-desc">Send goal, audience, references, timeline and budget through the Template Factory or contact form. Goes to Hoopz instantly via Telegram and email.</p></div>
+    <div class="proc-card fade-up"><div class="proc-num">02</div><div class="proc-name">DIRECTION LOCK</div><p class="proc-desc">Hoopz defines the visual direction, deliverables and first milestone before production begins. No guesswork.</p></div>
+    <div class="proc-card fade-up"><div class="proc-num">03</div><div class="proc-name">BUILD SPRINT</div><p class="proc-desc">Design, 3D, VFX, web or OS work is produced in focused passes with review checkpoints at every stage.</p></div>
+    <div class="proc-card fade-up"><div class="proc-num">04</div><div class="proc-name">LAUNCH & SCALE</div><p class="proc-desc">Final files, pages, dashboards and launch assets packaged so the brand can move immediately after delivery.</p></div>
+  </div>
+</section>
+
+<hr class="divider"/>
+
+<!-- PORTFOLIO -->
+<section id="portfolio">
+  <div class="tag"><i class="ti ti-photo"></i> Portfolio</div>
+  <h2 class="sec-title">GLIMPSES OF<br/>THE UNIVERSE</h2>
+  <p class="sec-sub">A selection of finished worlds — logos, posters, dashboards and Lagos Universe pieces.</p>
+  <div class="port-grid">
+    <div class="port-item fade-up"><img src="/assets/images/portfolio-01.jpg" alt="3D Logo render" loading="lazy"/><div class="port-ph"><i class="ti ti-cube-3d-sphere"></i><span>3D LOGO RENDER</span></div><div class="port-overlay"><div class="port-label">3D / 200D logo render for a tech brand</div></div></div>
+    <div class="port-item fade-up"><img src="/assets/images/portfolio-02.jpg" alt="DJ identity" loading="lazy"/><div class="port-ph"><i class="ti ti-music"></i><span>DJ IDENTITY</span></div><div class="port-overlay"><div class="port-label">DJ / music identity with neon cyber energy</div></div></div>
+    <div class="port-item fade-up"><img src="/assets/images/portfolio-03.jpg" alt="Lagos Universe poster" loading="lazy"/><div class="port-ph"><i class="ti ti-stars"></i><span>LAGOS UNIVERSE</span></div><div class="port-overlay"><div class="port-label">Lagos skyline remixed into a galaxy portal</div></div></div>
+    <div class="port-item fade-up"><img src="/assets/images/portfolio-04.jpg" alt="OS Dashboard" loading="lazy"/><div class="port-ph"><i class="ti ti-layout-dashboard"></i><span>OS DASHBOARD</span></div><div class="port-overlay"><div class="port-label">OS-style dashboard inspired by Cipher Sage OS</div></div></div>
+    <div class="port-item fade-up"><img src="/assets/images/portfolio-05.jpg" alt="Brand poster" loading="lazy"/><div class="port-ph"><i class="ti ti-sparkles"></i><span>BRAND POSTER</span></div><div class="port-overlay"><div class="port-label">Promo artwork with volumetric lighting and glow</div></div></div>
+    <div class="port-item fade-up"><img src="/assets/images/portfolio-06.jpg" alt="Avatar concept" loading="lazy"/><div class="port-ph"><i class="ti ti-user-bolt"></i><span>AVATAR CONCEPT</span></div><div class="port-overlay"><div class="port-label">Avatar with hood, neon eyes and Lagos in the background</div></div></div>
+  </div>
+</section>
+
+<hr class="divider"/>
+
+<!-- CLIENTS -->
+<section id="clients">
+  <div class="tag"><i class="ti ti-users"></i> Clients & Proof</div>
+  <h2 class="sec-title">BRANDS WE'VE<br/>BUILT FOR</h2>
+  <div class="clients-grid">
+    <div class="client-card fade-up"><div class="cc-name">Real Homie Property</div><p class="cc-desc">Real estate visual identity, coin-style branding and listing-ready graphics with Lagos flavour.</p></div>
+    <div class="client-card fade-up"><div class="cc-name">TAB Autos</div><p class="cc-desc">Auto dealer visuals, logo directions and site moodboards for a bold, performance-driven car universe.</p></div>
+    <div class="client-card fade-up"><div class="cc-name">Princess VOJ Salon</div><p class="cc-desc">Beauty / salon brand visuals, posters and logo work with premium feminine energy.</p></div>
+  </div>
+  <div class="testi-grid">
+    <div class="testi fade-up"><p class="testi-text">Once the visuals dropped, people kept asking who built it. The brand finally felt like the future version of us.</p><div class="testi-by">Creative collaborator · Lagos</div></div>
+    <div class="testi fade-up"><p class="testi-text">Hoopz didn't just design a logo. He gave us a full world, with motion, posters and a site we're proud to send out.</p><div class="testi-by">Brand client · Global</div></div>
+  </div>
+</section>
+
+<hr class="divider"/>
+
+<!-- ══════════════════════════════════════
+     SOCIAL FEEDS — LIVE SIGNALS SECTION
+══════════════════════════════════════ -->
+<section id="social-feeds">
+  <div class="tag"><i class="ti ti-broadcast"></i> Live Signals · Social Feeds</div>
+  <h2 class="sec-title">WHERE WE<br/>BROADCAST</h2>
+  <p class="sec-sub">New posts, reels and drops appear here first. These are the live frequencies where Hoopz Blends broadcasts work, tests and experiments — direct from every platform.</p>
+
+  <div class="feed-grid" id="feedGrid">
+    <!-- YouTube -->
+    <div class="feed-card fade-up">
+      <div class="feed-head">
+        <div class="feed-icon" style="background:rgba(239,68,68,.12)"><i class="ti ti-brand-youtube" style="color:#ef4444"></i></div>
+        <div>
+          <div class="feed-name" style="color:#ef4444">YouTube</div>
+          <div class="feed-handle">@hoopzblendsanimations</div>
+        </div>
+      </div>
+      <div class="feed-body">
+        <div class="feed-latest-label"><span class="feed-live-dot"></span>Latest</div>
+        <div class="feed-latest-text" id="yt-latest">New animation breakdown — Lagos Universe VFX reel</div>
+        <a href="https://youtube.com/@hoopzblendsanimations" target="_blank" rel="noopener" class="feed-link" style="color:#ef4444;border-color:rgba(239,68,68,.25);background:rgba(239,68,68,.06)"><i class="ti ti-arrow-right"></i> Open Channel</a>
+      </div>
+    </div>
+    <!-- Instagram -->
+    <div class="feed-card fade-up">
+      <div class="feed-head">
+        <div class="feed-icon" style="background:rgba(232,121,249,.12)"><i class="ti ti-brand-instagram" style="color:var(--rose)"></i></div>
+        <div>
+          <div class="feed-name" style="color:var(--rose)">Instagram</div>
+          <div class="feed-handle">@hoopzblends</div>
+        </div>
+      </div>
+      <div class="feed-body">
+        <div class="feed-latest-label"><span class="feed-live-dot"></span>Latest</div>
+        <div class="feed-latest-text" id="ig-latest">3D logo render drop — swipe for full process shots</div>
+        <a href="https://instagram.com/hoopzblends" target="_blank" rel="noopener" class="feed-link" style="color:var(--rose);border-color:rgba(232,121,249,.25);background:rgba(232,121,249,.06)"><i class="ti ti-arrow-right"></i> View Grid</a>
+      </div>
+    </div>
+    <!-- TikTok -->
+    <div class="feed-card fade-up">
+      <div class="feed-head">
+        <div class="feed-icon" style="background:rgba(72,229,255,.1)"><i class="ti ti-brand-tiktok" style="color:var(--accent)"></i></div>
+        <div>
+          <div class="feed-name" style="color:var(--accent)">TikTok</div>
+          <div class="feed-handle">@hoopzblends</div>
+        </div>
+      </div>
+      <div class="feed-body">
+        <div class="feed-latest-label"><span class="feed-live-dot"></span>Latest</div>
+        <div class="feed-latest-text" id="tt-latest">Quick FX test — hologram glitch transition reel</div>
+        <a href="https://tiktok.com/@hoopzblends" target="_blank" rel="noopener" class="feed-link" style="color:var(--accent);border-color:rgba(72,229,255,.25);background:rgba(72,229,255,.06)"><i class="ti ti-arrow-right"></i> Watch Reels</a>
+      </div>
+    </div>
+    <!-- X / Twitter -->
+    <div class="feed-card fade-up">
+      <div class="feed-head">
+        <div class="feed-icon" style="background:rgba(255,255,255,.06)"><i class="ti ti-brand-x" style="color:#e5e7ff"></i></div>
+        <div>
+          <div class="feed-name" style="color:#e5e7ff">X (Twitter)</div>
+          <div class="feed-handle">@HoopzBlends</div>
+        </div>
+      </div>
+      <div class="feed-body">
+        <div class="feed-latest-label"><span class="feed-live-dot"></span>Latest</div>
+        <div class="feed-latest-text" id="tw-latest">Thread: building HBX Ecosystem OS in public — 21 agents, Lagos, free forever</div>
+        <a href="https://x.com/HoopzBlends" target="_blank" rel="noopener" class="feed-link" style="color:#e5e7ff;border-color:rgba(255,255,255,.15);background:rgba(255,255,255,.04)"><i class="ti ti-arrow-right"></i> Open Feed</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Embed CTA row -->
+  <div style="margin-top:24px;background:rgba(5,8,26,.6);border:1px solid rgba(72,229,255,.12);border-radius:12px;padding:20px 24px;display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap">
+    <div>
+      <div style="font-family:var(--font-hero);font-size:15px;letter-spacing:.05em;margin-bottom:4px">FOLLOW ALL CHANNELS</div>
+      <div style="font-size:12px;color:var(--muted)">Stay up to date with every drop, reel, test and launch across every platform.</div>
+    </div>
+    <div style="display:flex;gap:8px;flex-wrap:wrap">
+      <a href="https://youtube.com/@hoopzblendsanimations" target="_blank" rel="noopener" style="width:36px;height:36px;border-radius:7px;background:rgba(239,68,68,.1);border:1px solid rgba(239,68,68,.2);display:flex;align-items:center;justify-content:center;color:#ef4444;font-size:17px;text-decoration:none;transition:all .2s" aria-label="YouTube"><i class="ti ti-brand-youtube"></i></a>
+      <a href="https://instagram.com/hoopzblends" target="_blank" rel="noopener" style="width:36px;height:36px;border-radius:7px;background:rgba(232,121,249,.1);border:1px solid rgba(232,121,249,.2);display:flex;align-items:center;justify-content:center;color:var(--rose);font-size:17px;text-decoration:none;transition:all .2s" aria-label="Instagram"><i class="ti ti-brand-instagram"></i></a>
+      <a href="https://tiktok.com/@hoopzblends" target="_blank" rel="noopener" style="width:36px;height:36px;border-radius:7px;background:rgba(72,229,255,.08);border:1px solid rgba(72,229,255,.2);display:flex;align-items:center;justify-content:center;color:var(--accent);font-size:17px;text-decoration:none;transition:all .2s" aria-label="TikTok"><i class="ti ti-brand-tiktok"></i></a>
+      <a href="https://x.com/HoopzBlends" target="_blank" rel="noopener" style="width:36px;height:36px;border-radius:7px;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.1);display:flex;align-items:center;justify-content:center;color:#e5e7ff;font-size:17px;text-decoration:none;transition:all .2s" aria-label="X Twitter"><i class="ti ti-brand-x"></i></a>
+      <a href="https://t.me/hoopzblends" target="_blank" rel="noopener" style="width:36px;height:36px;border-radius:7px;background:rgba(0,136,204,.1);border:1px solid rgba(0,136,204,.2);display:flex;align-items:center;justify-content:center;color:#0088cc;font-size:17px;text-decoration:none;transition:all .2s" aria-label="Telegram"><i class="ti ti-brand-telegram"></i></a>
+      <a href="https://facebook.com/hoopzblends" target="_blank" rel="noopener" style="width:36px;height:36px;border-radius:7px;background:rgba(59,130,246,.1);border:1px solid rgba(59,130,246,.2);display:flex;align-items:center;justify-content:center;color:#3b82f6;font-size:17px;text-decoration:none;transition:all .2s" aria-label="Facebook"><i class="ti ti-brand-facebook"></i></a>
+    </div>
+  </div>
+</section>
+
+<hr class="divider"/>
+
+<!-- TEMPLATE FACTORY -->
+<section id="template-factory">
+  <div class="tag"><i class="ti ti-file-description"></i> Template Factory</div>
+  <h2 class="sec-title">SEND A<br/>CLEAN BRIEF</h2>
+  <p class="sec-sub">Pick what you need, describe the vibe, and it goes straight to Hoopz via Telegram and email instantly.</p>
+  <div class="tf-box">
+    <div class="form-group">
+      <label class="form-label">What do you need?</label>
+      <div class="form-types" id="briefTypes">
+        <div class="form-type" onclick="selType(this)">Logo / 3D Identity</div>
+        <div class="form-type" onclick="selType(this)">Website / Landing</div>
+        <div class="form-type" onclick="selType(this)">VFX / Reel Pack</div>
+        <div class="form-type" onclick="selType(this)">Brand Universe</div>
+        <div class="form-type" onclick="selType(this)">HBX OS Setup</div>
+        <div class="form-type" onclick="selType(this)">Custom Brief</div>
+      </div>
+    </div>
+    <div class="form-group"><label class="form-label">Brand / Project Name</label><input type="text" class="form-input" id="bBrand" placeholder="Your brand or project name"/></div>
+    <div class="form-group"><label class="form-label">Contact Email</label><input type="email" class="form-input" id="bEmail" placeholder="your@email.com"/></div>
+    <div class="form-group"><label class="form-label">Social handle (optional)</label><input type="text" class="form-input" id="bHandle" placeholder="@yourhandle"/></div>
+    <div class="form-group"><label class="form-label">What are you trying to build?</label><textarea class="form-textarea" id="bGoal" placeholder="Describe the vibe, references, timeline and budget. The more detail, the better."></textarea></div>
+    <input type="text" id="bHp" name="_hp" tabindex="-1" autocomplete="off" style="position:absolute;left:-9999px;width:1px;height:1px;opacity:0" aria-hidden="true"/>
+    <button class="submit-btn" onclick="submitBrief()" id="bSubmit"><i class="ti ti-send"></i> Send Brief to Hoopz</button>
+    <div id="formOk">✅ Brief received! Hoopz has been notified via Telegram and email. He'll respond within 24 hours.</div>
+  </div>
+</section>
+
+<hr class="divider"/>
+
+<!-- FAQ -->
+<section id="faq">
+  <div class="tag"><i class="ti ti-help-circle"></i> FAQ</div>
+  <h2 class="sec-title">BEFORE YOU<br/>SEND A BRIEF</h2>
+  <div class="faq-list">
+    <div class="faq-item"><div class="faq-q" onclick="togFaq(this)">How fast can a project start? <i class="ti ti-plus"></i></div><div class="faq-a">Simple briefs start after scope and first payment are confirmed. Complex brand universes need a discovery call first.</div></div>
+    <div class="faq-item"><div class="faq-q" onclick="togFaq(this)">Do you work outside Nigeria? <i class="ti ti-plus"></i></div><div class="faq-a">Yes. Worldwide from Lagos via secure links, cloud folders and OS-style project dashboards. Payment options discussed per project.</div></div>
+    <div class="faq-item"><div class="faq-q" onclick="togFaq(this)">Are source files included? <i class="ti ti-plus"></i></div><div class="faq-a">Source files, usage rights and final formats are agreed before production starts — always part of the upfront scope conversation.</div></div>
+    <div class="faq-item"><div class="faq-q" onclick="togFaq(this)">How do briefs and messages reach Hoopz? <i class="ti ti-plus"></i></div><div class="faq-a">Every form on this site — brief, contact, live chat request — delivers instantly to Hoopz via Telegram notification AND to hoopzblends@gmail.com. You can also reach Hoopz directly on Telegram or WhatsApp from the contact section.</div></div>
+    <div class="faq-item"><div class="faq-q" onclick="togFaq(this)">What is the HBX Ecosystem OS? <i class="ti ti-plus"></i></div><div class="faq-a">HBX Ecosystem OS is a full AI operating system — 21 agents across 5 portals with voice, camera vision, browser, social connect, offline mode and SOVEREIGN self-update. Runs free on your PC using Groq AI. Email hoopzblends@gmail.com to get the package.</div></div>
+    <div class="faq-item"><div class="faq-q" onclick="togFaq(this)">Can a project grow into a full system? <i class="ti ti-plus"></i></div><div class="faq-a">Yes. A logo or website can grow into a brand universe, content engine or full Cipher Sage OS module. The upgrade path is always available.</div></div>
+  </div>
+</section>
+
+<hr class="divider"/>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="about-grid">
+    <div>
+      <div class="tag"><i class="ti ti-user"></i> About Hoopz Blends</div>
+      <h2 class="sec-title">BUILT FROM<br/>LAGOS.</h2>
+      <p style="font-size:15px;color:var(--muted);line-height:1.8;margin-bottom:16px">Hoopz Blends is a lifetime of Lagos experience — from Oshodi to Ikeja to Abesan — from basketball courts to computer labs, from Zero AI experiments to Cipher Sage OS, fused with animation, VFX and hacker mindset.</p>
+      <p style="font-size:14px;color:#3d4f66;line-height:1.7">If you're serious about your vision, Hoopz will treat it like part of his own universe.</p>
+      <div class="stats">
+        <div class="stat-box"><div class="stat-val">21</div><div class="stat-label">AI Agents</div></div>
+        <div class="stat-box"><div class="stat-val">5</div><div class="stat-label">OS Portals</div></div>
+        <div class="stat-box"><div class="stat-val">LAG</div><div class="stat-label">Built in Lagos</div></div>
+        <div class="stat-box"><div class="stat-val">∞</div><div class="stat-label">Imaginations</div></div>
+      </div>
+    </div>
+    <div>
+      <div class="about-img">
+        <img src="/assets/images/hoopz-avatar-portrait.jpg" alt="Hoopz Blends" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='block'"/>
+        <div class="about-img-ph" style="display:none"><i class="ti ti-user-circle"></i></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="divider"/>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="tag"><i class="ti ti-mail"></i> Contact</div>
+  <h2 class="sec-title">LET'S<br/>BUILD.</h2>
+  <div class="contact-grid">
+    <div class="tf-box">
+      <div class="form-group"><label class="form-label">Name</label><input type="text" class="form-input" id="cName" placeholder="Your name"/></div>
+      <div class="form-group"><label class="form-label">Email</label><input type="email" class="form-input" id="cEmail" placeholder="your@email.com"/></div>
+      <div class="form-group">
+        <label class="form-label">Service needed</label>
+        <select class="form-select" id="cService">
+          <option value="">Select a service</option>
+          <option>Logo / 3D Identity</option><option>Website / Landing</option><option>VFX / Reel</option><option>Brand Universe</option><option>HBX OS Setup</option><option>Other</option>
+        </select>
+      </div>
+      <div class="form-group"><label class="form-label">Message</label><textarea class="form-textarea" id="cMsg" placeholder="Every serious message is treated like a mission."></textarea></div>
+      <input type="text" id="cHp" name="_hp" tabindex="-1" autocomplete="off" style="position:absolute;left:-9999px;width:1px;height:1px;opacity:0" aria-hidden="true"/>
+      <button class="submit-btn" onclick="submitContact()" id="cSubmit"><i class="ti ti-send"></i> Send Message</button>
+      <div id="contactOk">✅ Message sent! Hoopz has been notified on Telegram and email. He'll be in touch soon.</div>
+    </div>
+    <div class="ci-list">
+      <div class="ci-item"><i class="ti ti-mail ci-icon"></i><div><div class="ci-label">Email</div><div class="ci-val"><a href="mailto:hoopzblends@gmail.com">hoopzblends@gmail.com</a></div></div></div>
+      <div class="ci-item"><i class="ti ti-map-pin ci-icon"></i><div><div class="ci-label">Location</div><div class="ci-val">Lagos, Nigeria (GMT+1) · Remote worldwide</div></div></div>
+      <div class="ci-item"><i class="ti ti-cpu ci-icon" style="color:var(--accent)"></i><div><div class="ci-label">HBX OS</div><div class="ci-val"><a href="#os-section" style="color:var(--accent)">→ Cipher Sage OS</a></div></div></div>
+      <div class="messenger-btns">
+        <a href="https://wa.me/2347034722704?text=Hi%20Hoopz%2C%20I%20need%20help%20with%20a%20project" target="_blank" rel="noopener" class="wa-btn"><i class="ti ti-brand-whatsapp"></i> WhatsApp</a>
+        <a href="https://t.me/hoopzblends" target="_blank" rel="noopener" class="tg-btn"><i class="ti ti-brand-telegram"></i> Telegram</a>
+      </div>
+      <div style="background:rgba(5,8,26,.7);border:1px solid rgba(72,229,255,.1);border-radius:10px;padding:14px;font-size:12px;color:var(--muted);line-height:1.75">
+        <div style="font-family:var(--font-hero);font-size:13px;color:#e5e7ff;margin-bottom:7px">PAYMENT & DELIVERY</div>
+        Payment options discussed per project. Source files and licenses agreed before work starts. Delivery via secure links, cloud folders and OS dashboards.
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-grid">
+    <div>
+      <div class="footer-brand">HOOPZ BLENDS</div>
+      <div class="footer-sub">Creative & Tech Universe · Lagos. Built from Oshodi to Ikeja. Broadcast to the galaxy.</div>
+      <div class="footer-socials">
+        <a href="https://facebook.com/hoopzblends" target="_blank" rel="noopener" class="fs" aria-label="Facebook"><i class="ti ti-brand-facebook"></i></a>
+        <a href="https://instagram.com/hoopzblends" target="_blank" rel="noopener" class="fs" aria-label="Instagram"><i class="ti ti-brand-instagram"></i></a>
+        <a href="https://tiktok.com/@hoopzblends" target="_blank" rel="noopener" class="fs" aria-label="TikTok"><i class="ti ti-brand-tiktok"></i></a>
+        <a href="https://x.com/HoopzBlends" target="_blank" rel="noopener" class="fs" aria-label="X Twitter"><i class="ti ti-brand-x"></i></a>
+        <a href="https://youtube.com/@hoopzblendsanimations" target="_blank" rel="noopener" class="fs" aria-label="YouTube"><i class="ti ti-brand-youtube"></i></a>
+        <a href="https://t.me/hoopzblends" target="_blank" rel="noopener" class="fs" aria-label="Telegram"><i class="ti ti-brand-telegram"></i></a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <div class="fc-title">Services</div>
+      <a href="#services">Logo / 3D Identity</a>
+      <a href="#services">Website / Landing</a>
+      <a href="#services">VFX / Reel Pack</a>
+      <a href="#services">Brand Universe</a>
+      <a href="#services">HBX OS Setup</a>
+    </div>
+    <div class="footer-col">
+      <div class="fc-title">Portals</div>
+      <a href="#os-section">Cipher Sage OS</a>
+      <a href="#universe">Zero AI</a>
+      <a href="#universe">Griot AI</a>
+      <a href="#universe">NYRA AI</a>
+      <a href="#universe">HBX Ecosystem</a>
+    </div>
+    <div class="footer-col">
+      <div class="fc-title">Legal</div>
+      <a href="/terms/">Terms of Service</a>
+      <a href="/privacy/">Privacy Policy</a>
+      <a href="/admin/">Admin</a>
+      <a href="mailto:hoopzblends@gmail.com">Email Hoopz</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div>© 2026 Hoopz Blends Technologies. All rights reserved. Crafted in Lagos • Broadcast to the Galaxy.</div>
+    <div style="display:flex;gap:14px"><a href="/terms/">Terms</a><a href="/privacy/">Privacy</a></div>
+  </div>
+</footer>
+
+<!-- FLOATING AVATAR — CSS hooded figure (matches HBX OS HUD character) -->
+<button id="os-avatar" aria-label="Open Hoopz chat assistant" onclick="window.HoopzChat&&HoopzChat.toggle()">
+  <div class="hb-hood-wrap">
+    <div class="hb-aura"></div>
+    <div class="hb-hood"></div>
+    <div class="hb-face"></div>
+    <div class="hb-eye left"></div>
+    <div class="hb-eye right"></div>
+  </div>
+</button>
+<div id="avatarSpeech" role="status" aria-live="polite"></div>
+
+<!-- CHAT ROOT — widget.js injects into this -->
+<div id="os-chat-root"></div>
+
+
+<script src="/assets/js/particles.js" defer></script>
+<script src="/chat/widget.js" defer></script>
+<script>
+// ── CURSOR ──────────────────────────────────────────
+var cur=document.getElementById('cursor'),curR=document.getElementById('cursor-ring'),mx=0,my=0,rx=0,ry=0;
+document.addEventListener('mousemove',function(e){mx=e.clientX;my=e.clientY;cur.style.left=mx+'px';cur.style.top=my+'px'});
+setInterval(function(){rx+=(mx-rx)*.1;ry+=(my-ry)*.1;curR.style.left=rx+'px';curR.style.top=ry+'px'},14);
+document.querySelectorAll('a,button,.svc-card,.uni-card,.os-card,.port-item,.feed-card').forEach(function(el){
+  el.addEventListener('mouseenter',function(){cur.style.width='14px';cur.style.height='14px';cur.style.background='var(--accent2)';curR.style.width='38px';curR.style.height='38px'});
+  el.addEventListener('mouseleave',function(){cur.style.width='8px';cur.style.height='8px';cur.style.background='var(--accent)';curR.style.width='28px';curR.style.height='28px'});
+});
+
+// ── NAV SCROLL ─────────────────────────────────────
+window.addEventListener('scroll',function(){document.getElementById('mainNav').classList.toggle('scrolled',window.scrollY>60)});
+
+// ── FADE IN ────────────────────────────────────────
+var io=new IntersectionObserver(function(entries){entries.forEach(function(e){if(e.isIntersecting)e.target.classList.add('vis')})},{threshold:.08});
+document.querySelectorAll('.fade-up').forEach(function(el,i){el.style.transitionDelay=(i%4)*70+'ms';io.observe(el)});
+
+// ── NAV ACTIVE ─────────────────────────────────────
+var navIO=new IntersectionObserver(function(entries){entries.forEach(function(e){if(e.isIntersecting){document.querySelectorAll('.nav-links a').forEach(function(a){a.style.color=a.getAttribute('href')==='#'+e.target.id?'var(--accent)':''})}})},{threshold:.35});
+document.querySelectorAll('section[id]').forEach(function(s){navIO.observe(s)});
+
+// ── OS MODAL ───────────────────────────────────────
+document.getElementById('osInfoModal').addEventListener('click',function(e){if(e.target===this)this.classList.remove('open')});
+
+// ── FAQ ────────────────────────────────────────────
+function togFaq(el){var it=el.closest('.faq-item'),was=it.classList.contains('open');document.querySelectorAll('.faq-item').forEach(function(i){i.classList.remove('open')});if(!was)it.classList.add('open')}
+
+// ── BRIEF FORM ─────────────────────────────────────
+function selType(el){document.querySelectorAll('.form-type').forEach(function(t){t.classList.remove('sel')});el.classList.add('sel')}
+function selBrief(type){
+  document.getElementById('template-factory').scrollIntoView({behavior:'smooth'});
+  setTimeout(function(){document.querySelectorAll('.form-type').forEach(function(t){t.classList.toggle('sel',t.textContent===type)})},600);
+}
+
+async function submitBrief(){
+  var brand=document.getElementById('bBrand').value.trim();
+  var email=document.getElementById('bEmail').value.trim();
+  var goal=document.getElementById('bGoal').value.trim();
+  var handle=document.getElementById('bHandle').value.trim();
+  var hp=document.getElementById('bHp').value;
+  var typeEl=document.querySelector('.form-type.sel');
+  if(!brand||!email||!goal){alert('Please fill in brand name, email and description.');return}
+  var btn=document.getElementById('bSubmit');
+  btn.disabled=true;btn.innerHTML='<i class="ti ti-loader"></i> Sending...';
+  try{
+    var tid=typeEl?typeEl.textContent.toLowerCase().replace(/\s+/g,'-').replace(/[^a-z-]/g,''):'custom-brief';
+    var res=await fetch('/.netlify/functions/template-order',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({template_id:tid,brand_name:brand,client_email:email,handle:handle,goal:goal,requirements:goal,_hp:hp})});
+    var d=await res.json();
+    if(d.success){btn.style.display='none';document.getElementById('formOk').style.display='block';}
+    else{btn.disabled=false;btn.innerHTML='<i class="ti ti-send"></i> Send Brief to Hoopz';alert(d.message||'Error sending. Please email hoopzblends@gmail.com directly.');}
+  }catch(e){btn.disabled=false;btn.innerHTML='<i class="ti ti-send"></i> Send Brief to Hoopz';alert('Network error. Please email hoopzblends@gmail.com or message on Telegram.');}
+}
+
+async function submitContact(){
+  var name=document.getElementById('cName').value.trim();
+  var email=document.getElementById('cEmail').value.trim();
+  var msg=document.getElementById('cMsg').value.trim();
+  var svc=document.getElementById('cService').value;
+  var hp=document.getElementById('cHp').value;
+  if(!name||!email||!msg){alert('Please fill in all fields.');return}
+  var btn=document.getElementById('cSubmit');
+  btn.disabled=true;btn.innerHTML='<i class="ti ti-loader"></i> Sending...';
+  try{
+    var res=await fetch('/.netlify/functions/contact',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({name:name,email:email,type:svc||'General',message:msg,_hp:hp})});
+    var d=await res.json();
+    if(d.success){btn.style.display='none';document.getElementById('contactOk').style.display='block';}
+    else{btn.disabled=false;btn.innerHTML='<i class="ti ti-send"></i> Send Message';alert(d.message||'Error. Please email hoopzblends@gmail.com directly.');}
+  }catch(e){btn.disabled=false;btn.innerHTML='<i class="ti ti-send"></i> Send Message';alert('Network error. Please email hoopzblends@gmail.com or message on Telegram.');}
+}
+
+// ── SOCIAL FEEDS — live sync ───────────────────────
+async function loadSocialFeeds(){
+  try{
+    var res=await fetch('/.netlify/functions/social-sync');
+    var d=await res.json();
+    if(d.success&&d.platforms){
+      if(d.platforms.youtube&&d.platforms.youtube.latest)document.getElementById('yt-latest').textContent=d.platforms.youtube.latest;
+      if(d.platforms.instagram&&d.platforms.instagram.latest)document.getElementById('ig-latest').textContent=d.platforms.instagram.latest;
+      if(d.platforms.tiktok&&d.platforms.tiktok.latest)document.getElementById('tt-latest').textContent=d.platforms.tiktok.latest;
+      if(d.platforms.twitter&&d.platforms.twitter.latest)document.getElementById('tw-latest').textContent=d.platforms.twitter.latest;
+    }
+  }catch(e){}
+}
+loadSocialFeeds();
+
+// ── AVATAR VOICE — speaks on load + on hover prompts ────
+var speeches=['Let\'s build something 🔥','Need a logo? Start here →','HBX OS is LIVE ⚡','Built from Lagos 🌍','Ask me anything 💬','VFX that breaks reality ✨','21 AI agents online 🤖','Your universe starts here →'];
+var sIdx=0;
+var hbxSpeechSynth = window.speechSynthesis;
+
+function showSpeech(text){
+  var el=document.getElementById('avatarSpeech');
+  el.textContent=text||speeches[sIdx++%speeches.length];
+  el.classList.add('show');
+  setTimeout(function(){el.classList.remove('show')},3400);
+}
+
+// Real voice — used by both the avatar's idle prompts and the chat widget.
+// Click-to-activate by default (Galaxy v4.0 spec); honored via window.hbxVoiceAutoSpeak.
+window.hbxSpeak = function(text, opts){
+  opts = opts || {};
+  showSpeech(text);
+  if(!hbxSpeechSynth) return;
+  if(!opts.force && window.hbxVoiceAutoSpeak !== true) return;
+  hbxSpeechSynth.cancel();
+  var clean = String(text).replace(/<[^>]+>/g,'').replace(/[*#`]/g,'').substring(0,400);
+  var utt = new SpeechSynthesisUtterance(clean);
+  utt.rate=0.97; utt.pitch=0.95; utt.volume=0.95;
+  var voices = hbxSpeechSynth.getVoices();
+  var preferred = voices.find(function(v){return v.lang==='en-GB'&&/male/i.test(v.name);}) || voices.find(function(v){return v.lang==='en-US';}) || voices[0];
+  if(preferred) utt.voice = preferred;
+  var av = document.getElementById('os-avatar');
+  utt.onstart = function(){ av.classList.add('speaking'); };
+  utt.onend = utt.onerror = function(){ av.classList.remove('speaking'); };
+  hbxSpeechSynth.speak(utt);
+};
+
+setInterval(function(){showSpeech()},14000);
+document.getElementById('os-avatar').addEventListener('mouseenter',function(){showSpeech()});
+
+// Welcome greeting — speaks once per browser session (always at least shows
+// the bubble; speaks aloud too since a first-touch greeting is the one case
+// worth a gentle exception to click-to-activate — still skippable below).
+(function(){
+  if(sessionStorage.getItem('hbxWelcomed')) return;
+  sessionStorage.setItem('hbxWelcomed','1');
+  setTimeout(function(){
+    window.hbxSpeak("Hey! Welcome to Hoopz Blends. I'm here if you need a logo, a website, or just want to explore the HBX Ecosystem. Tap me anytime.", {force:true});
+  }, 2200);
+})();
+
+window.addEventListener('hbxChatClose',function(){document.getElementById('os-avatar').classList.add('avatar-active');setTimeout(function(){document.getElementById('os-avatar').classList.remove('avatar-active')},1200)});
+
+
+// ══════════════════════════════════════════════════
+// GALAXY v4.0 ADDITIONS
+// ══════════════════════════════════════════════════
+
+// ── BOOT SCREEN ─────────────────────────────────────
+(function(){
+  var boot=document.getElementById('bootScreen');
+  if(!boot)return;
+  var fill=document.getElementById('bootBarFill');
+  // Skip boot screen on repeat visits same session for snappier feel
+  if(sessionStorage.getItem('hbxBooted')){ boot.classList.add('hidden'); return; }
+  requestAnimationFrame(function(){ fill.style.width='100%'; });
+  setTimeout(function(){
+    boot.classList.add('hidden');
+    sessionStorage.setItem('hbxBooted','1');
+  },1500);
+})();
+
+// ── SHOOTING STARS ───────────────────────────────────
+(function(){
+  var layer=document.getElementById('shootingStars');
+  if(!layer)return;
+  function spawnStar(){
+    var star=document.createElement('div');
+    star.className='shooting-star';
+    var startX=Math.random()*window.innerWidth*0.6;
+    var startY=Math.random()*window.innerHeight*0.3;
+    var dx=200+Math.random()*250;
+    var dy=120+Math.random()*150;
+    star.style.left=startX+'px';
+    star.style.top=startY+'px';
+    star.style.setProperty('--sx',dx+'px');
+    star.style.setProperty('--sy',dy+'px');
+    star.style.animation='shootAcross '+(1+Math.random()*0.6)+'s linear forwards';
+    layer.appendChild(star);
+    setTimeout(function(){star.remove()},2000);
+  }
+  function loop(){
+    spawnStar();
+    setTimeout(loop,4000+Math.random()*6000);
+  }
+  setTimeout(loop,3000);
+})();
+
+// ── THEME TOGGLE (dark default, light optional) ──────
+function toggleTheme(){
+  var isLight=document.body.classList.toggle('light-mode');
+  localStorage.setItem('hbxTheme',isLight?'light':'dark');
+  var icon=document.querySelector('#themeToggle i');
+  icon.className=isLight?'ti ti-sun':'ti ti-moon';
+  playClick();
+}
+(function(){
+  var saved=localStorage.getItem('hbxTheme');
+  if(saved==='light'){
+    document.body.classList.add('light-mode');
+    var icon=document.querySelector('#themeToggle i');
+    if(icon)icon.className='ti ti-sun';
+  }
+})();
+
+// ── SOUND DESIGN SYSTEM (lightweight, WebAudio, no files needed) ────
+var hbxAudioCtx=null, soundOn=localStorage.getItem('hbxSound')!=='off';
+function getAudioCtx(){ if(!hbxAudioCtx){try{hbxAudioCtx=new (window.AudioContext||window.webkitAudioContext)();}catch(e){}} return hbxAudioCtx; }
+function blip(freq,dur,vol){
+  if(!soundOn)return;
+  var ctx=getAudioCtx(); if(!ctx)return;
+  var osc=ctx.createOscillator(), gain=ctx.createGain();
+  osc.type='sine'; osc.frequency.value=freq;
+  gain.gain.value=vol||0.04;
+  osc.connect(gain); gain.connect(ctx.destination);
+  osc.start();
+  gain.gain.exponentialRampToValueAtTime(0.0001,ctx.currentTime+dur);
+  osc.stop(ctx.currentTime+dur);
+}
+function playClick(){ blip(740,0.06,0.035); }
+function playBoot(){ if(!soundOn)return; blip(220,0.4,0.025); setTimeout(function(){blip(440,0.3,0.02)},150); }
+function toggleSound(){
+  soundOn=!soundOn;
+  localStorage.setItem('hbxSound',soundOn?'on':'off');
+  document.querySelector('#soundToggle i').className=soundOn?'ti ti-volume':'ti ti-volume-3';
+  if(soundOn)playClick();
+}
+(function(){
+  if(!soundOn){ var icon=document.querySelector('#soundToggle i'); if(icon)icon.className='ti ti-volume-3'; }
+  document.querySelectorAll('button,.svc-btn,.uc-link,a.btn-p,a.btn-s').forEach(function(el){
+    el.addEventListener('click',function(){ playClick(); });
+  });
+  setTimeout(playBoot,300);
+})();
+
+// ── ANTI-COPY DETERRENT LAYER ────────────────────────
+// Note: this deters casual copying; it cannot make web content un-copyable.
+// Right-click, drag, and text-selection are blocked outside form fields.
+(function(){
+  document.body.classList.add('protect-content');
+  document.addEventListener('contextmenu',function(e){
+    if(e.target.closest('input,textarea,select'))return;
+    e.preventDefault();
+  });
+  document.addEventListener('dragstart',function(e){
+    if(e.target.tagName==='IMG')e.preventDefault();
+  });
+  document.querySelectorAll('img').forEach(function(img){ img.classList.add('no-drag'); img.setAttribute('draggable','false'); });
+})();
+
+// ── AVATAR: click-to-activate voice (no auto-speak by default) ──────
+// HoopzChat speak() in widget.js already only fires when ttsEnabled-style
+// flag is on; expose a simple opt-in toggle for the user via localStorage.
+window.hbxVoiceAutoSpeak = localStorage.getItem('hbxAutoSpeak') === 'on';
+
+</script>
+<script>
+/* === HBX-FORGE TEASER SCRIPT (injected) === */
+// HBX-FORGE TEASER - LIVE STATUS UPDATER
+// Drop this before </body> in your main HTML file
+
+(function() {
+  // Animate stat counters
+  const stats = document.querySelectorAll('.forge-stat-num[data-target]');
+  const animate = (el) => {
+    const target = parseInt(el.dataset.target, 10);
+    const duration = 1500;
+    const start = performance.now();
+    const tick = (now) => {
+      const progress = Math.min((now - start) / duration, 1);
+      const value = Math.floor(progress * target);
+      el.textContent = value;
+      if (progress < 1) requestAnimationFrame(tick);
+      else el.textContent = target;
+    };
+    requestAnimationFrame(tick);
+  };
+
+  // Use IntersectionObserver to trigger animation when visible
+  if ('IntersectionObserver' in window) {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          animate(e.target);
+          observer.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.5 });
+    stats.forEach(s => observer.observe(s));
+  } else {
+    stats.forEach(animate);
+  }
+
+  // Live time update for badge
+  const badge = document.querySelector('.forge-badge-text');
+  if (badge) {
+    const update = () => {
+      const now = new Date();
+      const time = now.toISOString().split('T')[1].split('.')[0];
+      badge.textContent = `SYSTEM ONLINE · ${time} UTC`;
+    };
+    update();
+    setInterval(update, 1000);
+  }
+})();
+
+</script>
+</body>
+</html>
