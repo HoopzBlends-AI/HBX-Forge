@@ -17,10 +17,10 @@ jobs:
         with:
           node-version: 20
           cache: npm
-          cache-dependency-path: apps/dashboard/package-lock.json
+          cache-dependency-path: apps/dashboard/package.json
       - name: Install dependencies (dashboard)
         working-directory: apps/dashboard
-        run: npm ci
+        run: npm install
       - name: Run lint (dashboard)
         working-directory: apps/dashboard
         run: npm run lint || true
@@ -36,10 +36,10 @@ jobs:
         with:
           node-version: 20
           cache: npm
-          cache-dependency-path: apps/dashboard/package-lock.json
+          cache-dependency-path: apps/dashboard/package.json
       - name: Install dependencies
         working-directory: apps/dashboard
-        run: npm ci
+        run: npm install
       - name: Build
         working-directory: apps/dashboard
         run: npm run build
@@ -84,7 +84,7 @@ jobs:
           node-version: 20
       - name: Install dependencies (dashboard)
         working-directory: apps/dashboard
-        run: npm ci
+        run: npm install
       - name: npm audit
         working-directory: apps/dashboard
         run: npm audit --audit-level=high
@@ -100,10 +100,10 @@ jobs:
         with:
           node-version: 20
           cache: npm
-          cache-dependency-path: apps/dashboard/package-lock.json
+          cache-dependency-path: apps/dashboard/package.json
       - name: Install dependencies
         working-directory: apps/dashboard
-        run: npm ci
+        run: npm install
       - name: Run tests
         working-directory: apps/dashboard
         run: npm test || echo "No tests configured yet - add tests to packages/"
