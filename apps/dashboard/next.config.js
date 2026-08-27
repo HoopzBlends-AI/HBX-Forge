@@ -1,11 +1,21 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  reactStrictMode: true,
-  output: 'export',
-  images: { unoptimized: true },
-  basePath: '/forge',
-  assetPrefix: '/forge/',
-  trailingSlash: true,
-};
+  output: 'standalone',
+  images: {
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'hoopzblends.store',
+        pathname: '/assets/images/**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'images.unsplash.com',
+      },
+    ],
+  },
+  // Standalone output makes Docker deployment easy
+  // bundlePages: true, // Next.js 14: default, no config needed
+}
 
-module.exports = nextConfig;
+module.exports = nextConfig
