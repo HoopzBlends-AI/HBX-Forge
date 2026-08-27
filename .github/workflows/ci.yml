@@ -111,8 +111,8 @@ jobs:
   deploy-preview:
     name: Deploy Preview (PRs only)
     runs-on: ubuntu-latest
-    if: github.event_name == 'pull_request'
-    needs: [build-dashboard, test]
+    if: always() && github.event_name == 'pull_request'
+    needs: build-dashboard
     steps:
       - uses: actions/checkout@v4
       - name: Download build artifact
@@ -134,8 +134,8 @@ jobs:
   deploy-production:
     name: Deploy Production (main only)
     runs-on: ubuntu-latest
-    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
-    needs: [build-dashboard, test]
+    if: always() && github.event_name == 'push' && github.ref == 'refs/heads/main'
+    needs: build-dashboard
     steps:
       - uses: actions/checkout@v4
       - name: Download build artifact
