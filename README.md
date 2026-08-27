@@ -272,3 +272,4 @@ AGPL-3.0 — open source, with the copyleft that keeps it open. Governments and 
 - **Press / Grants / Partnerships:** same inbox — mark subject line clearly
 - **Telegram:** [t.me/hoopzblends](https://t.me/hoopzblends)
 - **GitHub Discussions:** open an issue on this repo
+# test
